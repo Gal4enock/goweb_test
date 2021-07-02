@@ -39,12 +39,6 @@ a {
   }
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -102,6 +96,7 @@ h3 {
 }
 .hero {
   padding-top: 144px;
+  padding-bottom: 95px;
   background-image: url('../images/optimise-images/mobile-hero.jpg');
   background-repeat: no-repeat;
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
@@ -140,10 +135,89 @@ h3 {
   &-text {
     display: block;
     margin: 0 auto;
+    margin-top: 16px;
     text-align: center;
     color: $gray-text-color;
     font-weight: 400;
     font-size: 22px;
     line-height: 1.67;
   }
+  &-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 27px;
+    width: 156px;
+    height: 45px;
+    background-color: $green-bg;
+    color: $white-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    border-radius: 5px;
+    fill: $white-text-color;
+    &:hover,
+    &:focus {
+      background-color: $white-text-color;
+      color: $green-text-color;
+      fill: $green-text-color;
+    }
+  }
+}
+
+.about {
+  color: $black-text-color;
+  font-weight: 400;
+  &-list {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 13px;
+  }
+  &-circle {
+    margin: 0 auto;
+    margin-bottom: 11px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: $green-bg;
+    text-align: center;
+    padding-top: 15px;
+  }
+  &-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.66;
+  }
+  &-text {
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  &-description {
+    background-color: $green-bg;
+    color: $white-text-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    &-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.66;
+      margin-bottom: 5px;
+    }
+    &-title {
+      font-weight: 300;
+      font-size: 38px;
+      line-height: 1.26;
+      margin-bottom: 25px;
+    }
+    &-full {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+  }
+}
+.button {
+  border-color: $white-text-color;
 }
