@@ -262,4 +262,82 @@ a:hover, a:focus {
 .button {
   border-color: #ffffff;
 }
+
+.cases {
+  padding-top: 50px;
+  color: #333333;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 39px;
+}
+
+.cases-description {
+  font-size: 18px;
+  line-height: 1.66;
+  margin-bottom: 15px;
+}
+
+.cases-title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  margin-bottom: 35px;
+}
+
+.cases-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 37px;
+}
+
+.cases-list {
+  display: block;
+  margin: 0 auto;
+}
+
+.cases-list-photo {
+  margin-bottom: 7px;
+}
+
+.blog {
+  background-color: #0284d0;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+.blog-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  margin-bottom: 5px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.blog-title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+
+.blog-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.blog-button {
+  background-color: #0284d0;
+  border-color: #ffffff;
+}
+
+.blog-button:hover, .blog-button:focus {
+  color: #0284d0;
+  background-color: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */

@@ -221,3 +221,72 @@ a {
 .button {
   border-color: $white-text-color;
 }
+
+.cases {
+  padding-top: 50px;
+  color: $black-text-color;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 39px;
+  &-description {
+    font-size: 18px;
+    line-height: 1.66;
+    margin-bottom: 15px;
+  }
+  &-title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.26;
+    margin-bottom: 35px;
+  }
+  &-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 37px;
+  }
+  &-list {
+    display: block;
+    margin: 0 auto;
+    &-photo {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.blog {
+  background-color: $blue-bg;
+  color: $white-text-color;
+  padding-bottom: 30px;
+  &-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+  &-title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.26;
+    margin-bottom: 25px;
+    padding-left: 30px;
+  }
+  &-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &-button {
+    background-color: $blue-bg;
+    border-color: $white-text-color;
+    &:hover,
+    &:focus {
+      color: $blue-bg;
+      background-color: $white-text-color;
+    }
+  }
+}
