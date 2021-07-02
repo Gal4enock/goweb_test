@@ -3,7 +3,7 @@
  * Все паршалы подключаются сюда.
  */
 @import './utils/mixin';
-@import './unils//variables';
+@import './utils/variables';
 
 *,
 *::before,
@@ -20,7 +20,6 @@ img {
 body {
   margin: 0;
   background-color: $primary-bg;
-  color: $primery-text-color;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.03em;
 }
@@ -31,33 +30,15 @@ ul {
 }
 /* стиль ссылок*/
 a {
-  color: $title-text-color;
+  color: $white-text-color;
   text-decoration: none;
   transition: all 250ms linear;
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: $gray-text-color;
   }
 }
-/*кнопка*/
-.button {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  border-radius: 4px;
-  padding: 6px 22px;
-  min-width: 73px;
-  border: 1px solid transparent;
-  cursor: pointer;
-  font-weight: 500;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: $other-color;
-    background-color: $accent-color;
-  }
-}
+
 h3 {
   font-weight: 700;
   font-size: 14px;
@@ -73,4 +54,96 @@ h3 {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 19px;
+
+  @include for-size(tablet) {
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 38px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+    padding-left: 50px;
+    padding-right: 46px;
+  }
+}
+.header {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  padding-top: 21px;
+
+  &-logo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.2;
+    &-word {
+      color: $green-text-color;
+    }
+  }
+
+  &-nav-list {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    &-li:not(:last-child) {
+      margin-right: 11px;
+    }
+  }
+}
+.hero {
+  padding-top: 144px;
+  background-image: url('../images/optimise-images/mobile-hero.jpg');
+  background-repeat: no-repeat;
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    screen and (min-resolution: 96dpi) and (min-width: 320px),
+    screen and (min-resolution: 1dppx) and (min-width: 320px) {
+    background-image: url('../images/optimise-images/mobile-hero2x.jpg');
+  }
+
+  @include for-size(tablet) {
+    padding-top: 144px;
+    background-image: url('../images/optimise-images/tablet-hero.jpg');
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 96dpi) and (min-width: 768px),
+      screen and (min-resolution: 1dppx) and (min-width: 768px) {
+      background-image: url('../images/optimise-images/tablet-hero2x.jpg');
+    }
+  }
+  @include for-size(desktop) {
+    padding-top: 279px;
+    background-image: url('../images/optimise-images/desktop-hero.jpg');
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 96dpi) and (min-width: 768px),
+      screen and (min-resolution: 1dppx) and (min-width: 768px) {
+      background-image: url('../images/optimise-images/desktop-hero2x.jpg');
+    }
+  }
+  &-title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: $gray-text-color;
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 1.62;
+  }
+  &-text {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: $gray-text-color;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.67;
+  }
 }
