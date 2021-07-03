@@ -66,7 +66,7 @@ a:hover, a:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1360px) {
   .container {
     width: 1200px;
     padding-left: 50px;
@@ -168,7 +168,7 @@ a:hover, a:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1360px) {
   .hero {
     height: 768px;
     padding-top: 279px;
@@ -176,7 +176,7 @@ a:hover, a:focus {
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) and (min-width: 768px), screen and (min-width: 1200px) and (min-resolution: 96dpi) and (min-width: 768px), screen and (min-width: 1200px) and (min-resolution: 1dppx) and (min-width: 768px) {
+@media screen and (min-width: 1360px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 1360px) and (-webkit-min-device-pixel-ratio: 1) and (min-width: 768px), screen and (min-width: 1360px) and (min-resolution: 96dpi) and (min-width: 768px), screen and (min-width: 1360px) and (min-resolution: 1dppx) and (min-width: 768px) {
   .hero {
     background-image: url("../images/optimise-images/desktop-hero2x.jpg");
   }
@@ -244,6 +244,10 @@ a:hover, a:focus {
 }
 
 @media (min-width: 768px) {
+  .about {
+    width: 768px;
+    margin: 0 auto;
+  }
   .about-details {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -441,17 +445,26 @@ a:hover, a:focus {
 
 @media (min-width: 768px) {
   .blog {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    display: block;
+    width: 768px;
+    margin: 0 auto;
     padding-bottom: 0;
   }
   .blog-details {
     width: 384px;
+  }
+  .blog-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 768px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 }
 
@@ -591,9 +604,24 @@ a:hover, a:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .request-box {
     width: 384px;
+  }
+}
+
+.request-layout {
+  width: 320px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .request-layout {
+    width: 768px;
   }
 }
 
