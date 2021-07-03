@@ -57,8 +57,6 @@ a {
 
   @include for-size(tablet) {
     width: 768px;
-    padding-left: 40px;
-    padding-right: 38px;
   }
   @include for-size(desktop) {
     width: 1200px;
@@ -73,12 +71,22 @@ a {
   display: flex;
   flex-direction: column;
   padding-top: 21px;
+   @include for-size(tablet) {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  @include for-size(desktop) {
 
+  }
   &-logo {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 1.2;
+     @include for-size(tablet) {
+      font-size: 35px;
+      }
     &-word {
       color: $green-text-color;
     }
@@ -92,6 +100,9 @@ a {
     &-li:not(:last-child) {
       margin-right: 11px;
     }
+     @include for-size(tablet) {
+      font-size: 18px;
+      }
   }
 }
 .hero {
@@ -99,6 +110,7 @@ a {
   padding-bottom: 95px;
   background-image: url('../images/optimise-images/mobile-hero.jpg');
   background-repeat: no-repeat;
+  background-size: contain;
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
     screen and (min-resolution: 96dpi) and (min-width: 320px),
     screen and (min-resolution: 1dppx) and (min-width: 320px) {
@@ -106,7 +118,8 @@ a {
   }
 
   @include for-size(tablet) {
-    padding-top: 144px;
+    height: 1024px;
+    padding-top: 407px;
     background-image: url('../images/optimise-images/tablet-hero.jpg');
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
       screen and (min-resolution: 96dpi) and (min-width: 768px),
@@ -115,6 +128,7 @@ a {
     }
   }
   @include for-size(desktop) {
+    height: 768px;
     padding-top: 279px;
     background-image: url('../images/optimise-images/desktop-hero.jpg');
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -131,6 +145,9 @@ a {
     font-weight: 300;
     font-size: 52px;
     line-height: 1.62;
+    @include for-size(tablet) {
+      font-size: 55px;
+      }
   }
   &-text {
     display: block;
@@ -156,6 +173,10 @@ a {
     line-height: 1.6;
     border-radius: 5px;
     fill: $white-text-color;
+    @include for-size(tablet) {
+      width: 165px;
+      height: 48px;
+      }
     &:hover,
     &:focus {
       background-color: $white-text-color;
@@ -168,10 +189,26 @@ a {
 .about {
   color: $black-text-color;
   font-weight: 400;
+  &-details {
+    @include for-size(tablet) {
+      display: flex;
+       }
+  }
   &-list {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 13px;
+    @include for-size(tablet) {
+      display: flex;
+      padding-top: 40px;
+      padding-bottom: 29px;
+      justify-content: space-between;
+      }
+      &-item {
+        @include for-size(tablet) {
+      width: 194px;
+      }
+      }
   }
   &-circle {
     margin: 0 auto;
@@ -182,16 +219,27 @@ a {
     background-color: $green-bg;
     text-align: center;
     padding-top: 15px;
+    @include for-size(tablet) {
+      width: 67px;
+      height: 67px;
+      padding-top: 18px;
+      }
   }
   &-title {
     margin-bottom: 15px;
     font-size: 18px;
     line-height: 1.66;
+    @include for-size(tablet) {
+      font-size: 20px;
+      }
   }
   &-text {
     margin-bottom: 18px;
     font-size: 16px;
     line-height: 1.6;
+    @include for-size(tablet) {
+      font-size: 18px;
+      }
   }
   &-description {
     background-color: $green-bg;
@@ -199,11 +247,18 @@ a {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
+    @include for-size(tablet) {
+      width: 384px;
+      height: 564px;
+      }
     &-text {
       font-weight: 400;
       font-size: 18px;
       line-height: 1.66;
       margin-bottom: 5px;
+      @include for-size(tablet) {
+      font-size: 20px;
+      }
     }
     &-title {
       font-weight: 300;
@@ -216,11 +271,15 @@ a {
       font-size: 16px;
       line-height: 1.6;
       margin-bottom: 14px;
+      @include for-size(tablet) {
+      font-size: 18px;
+      margin-bottom: 20px;
+      }
     }
   }
 }
 .button {
-  border-color: $white-text-color;
+  border: 1px solid $white-text-color;
 }
 
 .cases {
@@ -233,6 +292,9 @@ a {
     font-size: 18px;
     line-height: 1.66;
     margin-bottom: 15px;
+    @include for-size(tablet) {
+      font-size: 20px;
+      }
   }
   &-title {
     font-weight: 300;
@@ -244,10 +306,18 @@ a {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 37px;
+    @include for-size(tablet) {
+      font-size: 18px;
+      }
   }
   &-list {
     display: block;
     margin: 0 auto;
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
     &-photo {
       margin-bottom: 7px;
     }
@@ -258,6 +328,14 @@ a {
   background-color: $blue-bg;
   color: $white-text-color;
   padding-bottom: 30px;
+  @include for-size(tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 0;
+      &-details {
+      width: 384px;
+      }
+  }
   &-description {
     font-weight: 400;
     font-size: 18px;
@@ -265,6 +343,9 @@ a {
     margin-bottom: 5px;
     padding-left: 30px;
     padding-top: 30px;
+    @include for-size(tablet) {
+      font-size: 20px;
+    }
   }
   &-title {
     font-weight: 300;
@@ -280,10 +361,13 @@ a {
     margin-bottom: 14px;
     padding-left: 30px;
     padding-right: 30px;
+    @include for-size(tablet) {
+      font-size: 18px;
+    }
   }
   &-button {
     background-color: $blue-bg;
-    border-color: $white-text-color;
+    border:1px solid $white-text-color;
     &:hover,
     &:focus {
       color: $blue-bg;
@@ -300,7 +384,17 @@ a {
     font-size: 18px;
     line-height: 1.66;
     margin-bottom: 15px;
+    @include for-size(tablet) {
+      font-size: 20px;
+    }
   }
+  &-list {
+    @include for-size(tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &-title {
     font-weight: 300;
     font-size: 38px;
@@ -312,6 +406,9 @@ a {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 37px;
+    @include for-size(tablet) {
+      font-size: 18px;
+    }
   }
 }
 .member{
@@ -321,17 +418,30 @@ a {
     font-size: 23px;
     line-height: 1.25;
     margin-bottom: 11px;
+    @include for-size(tablet) {
+      font-size: 25px;
+    }
   }
   &-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 10px;
+    @include for-size(tablet) {
+      font-size: 18px;
+      margin-bottom: 19px;
+    }
   }
 } 
 .request {
   background-color: $secondary-bg;
   padding-bottom: 30px;
+  @include for-size(tablet) {
+      display: flex;
+      &-box {
+        width: 384px;
+      }
+    }
   &-title {
     margin-top: 26px;
     margin-bottom: 34px;
@@ -363,11 +473,19 @@ a {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: $black-text-color;
+   @include for-size(tablet) {
+    padding-right: 230px;
+    padding-left: 230px;
+    font-size: 18px;
+    }
   &-social-links {
     display: flex;
     padding-left: 16px;
     padding-right: 16px;
     width: 256px;
     justify-content: space-between;
+     @include for-size(tablet) {
+    width: 287px;
+    }
   }
 }
