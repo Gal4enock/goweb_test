@@ -145,6 +145,7 @@ a {
   &-button {
     display: block;
     margin: 0 auto;
+    border: none;
     margin-top: 27px;
     width: 156px;
     height: 45px;
@@ -328,3 +329,25 @@ a {
     margin-bottom: 10px;
   }
 } 
+.request {
+  background-color: $secondary-bg;
+  &-title {
+    margin-top: 26px;
+    margin-bottom: 34px;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+  &-input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    width: 260px;
+    height: 40px;
+    background-color: $white-text-color;
+    border: none;
+  }
+  &-button {
+    width: 260px;
+  }
+}

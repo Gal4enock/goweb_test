@@ -178,6 +178,7 @@ a:hover, a:focus {
 .hero-button {
   display: block;
   margin: 0 auto;
+  border: none;
   margin-top: 27px;
   width: 156px;
   height: 45px;
@@ -381,5 +382,31 @@ a:hover, a:focus {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 10px;
+}
+
+.request {
+  background-color: #F4F4F4;
+}
+
+.request-title {
+  margin-top: 26px;
+  margin-bottom: 34px;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+}
+
+.request-input {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  width: 260px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.request-button {
+  width: 260px;
 }
 /*# sourceMappingURL=main.css.map */
