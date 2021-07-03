@@ -386,6 +386,7 @@ a:hover, a:focus {
 
 .request {
   background-color: #F4F4F4;
+  padding-bottom: 30px;
 }
 
 .request-title {
@@ -408,5 +409,29 @@ a:hover, a:focus {
 
 .request-button {
   width: 260px;
+}
+
+.footer {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #333333;
+}
+
+.footer-social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 256px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

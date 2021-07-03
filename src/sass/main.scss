@@ -331,6 +331,7 @@ a {
 } 
 .request {
   background-color: $secondary-bg;
+  padding-bottom: 30px;
   &-title {
     margin-top: 26px;
     margin-bottom: 34px;
@@ -349,5 +350,24 @@ a {
   }
   &-button {
     width: 260px;
+  }
+}
+.footer {
+  // height: 110px;
+  color: $white-text-color;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $black-text-color;
+  &-social-links {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 256px;
+    justify-content: space-between;
   }
 }
