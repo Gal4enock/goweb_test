@@ -340,4 +340,46 @@ a:hover, a:focus {
   color: #0284d0;
   background-color: #ffffff;
 }
+
+.team {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.team-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  margin-bottom: 15px;
+}
+
+.team-title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  margin-bottom: 35px;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 37px;
+}
+
+.member-name {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.25;
+  margin-bottom: 11px;
+}
+
+.member-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
 /*# sourceMappingURL=main.css.map */
