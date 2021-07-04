@@ -255,6 +255,12 @@ a:hover, a:focus {
   }
 }
 
+@media (min-width: 1360px) {
+  .about {
+    width: 1360px;
+  }
+}
+
 .about-list {
   text-align: center;
   padding-top: 30px;
@@ -335,6 +341,13 @@ a:hover, a:focus {
   .about-description {
     width: 384px;
     height: 564px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .about-description {
+    width: 680px;
+    height: 460px;
   }
 }
 
@@ -614,8 +627,8 @@ a:hover, a:focus {
 }
 
 .request-layout {
-  width: 320px;
   display: block;
+  width: 320px;
   margin: 0 auto;
 }
 

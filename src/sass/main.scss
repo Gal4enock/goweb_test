@@ -76,9 +76,7 @@ a {
     align-items: baseline;
     justify-content: space-between;
   }
-  @include for-size(desktop) {
 
-  }
   &-logo {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -196,6 +194,9 @@ a {
       display: flex;
        }
   }
+    @include for-size(desktop) {
+      width: 1360px;
+  }
   &-list {
     text-align: center;
     padding-top: 30px;
@@ -253,6 +254,10 @@ a {
       width: 384px;
       height: 564px;
       }
+    @include for-size(desktop) {
+      width: 680px;
+      height: 460px;
+  }
     &-text {
       font-weight: 400;
       font-size: 18px;
