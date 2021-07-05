@@ -143,14 +143,16 @@ a:hover, a:focus {
 .hero {
   padding-top: 144px;
   padding-bottom: 95px;
-  background-image: url("../images/optimise-images/mobile-hero.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/mobile-hero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/optimise-images/mobile-hero.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 320px), screen and (min-resolution: 96dpi) and (min-width: 320px), screen and (min-resolution: 1dppx) and (min-width: 320px) {
   .hero {
-    background-image: url("../images/optimise-images/mobile-hero2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/mobile-hero2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/optimise-images/mobile-hero2x.jpg");
   }
 }
 
@@ -158,13 +160,15 @@ a:hover, a:focus {
   .hero {
     height: 1024px;
     padding-top: 407px;
-    background-image: url("../images/optimise-images/tablet-hero.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/tablet-hero.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/optimise-images/tablet-hero.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 96dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 1dppx) and (min-width: 768px) {
   .hero {
-    background-image: url("../images/optimise-images/tablet-hero2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/tablet-hero2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/optimise-images/tablet-hero2x.jpg");
   }
 }
 
@@ -172,13 +176,15 @@ a:hover, a:focus {
   .hero {
     height: 768px;
     padding-top: 279px;
-    background-image: url("../images/optimise-images/desktop-hero.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/desktop-hero.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/optimise-images/desktop-hero.jpg");
   }
 }
 
 @media screen and (min-width: 1360px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 1360px) and (-webkit-min-device-pixel-ratio: 1) and (min-width: 768px), screen and (min-width: 1360px) and (min-resolution: 96dpi) and (min-width: 768px), screen and (min-width: 1360px) and (min-resolution: 1dppx) and (min-width: 768px) {
   .hero {
-    background-image: url("../images/optimise-images/desktop-hero2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/optimise-images/desktop-hero2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/optimise-images/desktop-hero2x.jpg");
   }
 }
 

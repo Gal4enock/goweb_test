@@ -27,6 +27,7 @@
     "sass": "^1.26.9"
   },
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "lightbox2": "^2.11.3"
   }
 }
