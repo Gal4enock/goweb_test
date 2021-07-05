@@ -68,9 +68,9 @@ a:hover, a:focus {
 
 @media (min-width: 1360px) {
   .container {
-    width: 1200px;
-    padding-left: 50px;
-    padding-right: 46px;
+    width: 1360px;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 }
 
@@ -286,6 +286,12 @@ a:hover, a:focus {
   }
 }
 
+@media (min-width: 1360px) {
+  .about-list-item {
+    width: 362px;
+  }
+}
+
 .about-circle {
   margin: 0 auto;
   margin-bottom: 11px;
@@ -387,6 +393,7 @@ a:hover, a:focus {
 
 .button {
   border: 1px solid #ffffff;
+  margin: 0;
 }
 
 .cases {
@@ -406,6 +413,13 @@ a:hover, a:focus {
 @media (min-width: 768px) {
   .cases-description {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .cases-description {
+    padding-left: 28px;
+    padding-right: 28px;
   }
 }
 
@@ -459,7 +473,6 @@ a:hover, a:focus {
 @media (min-width: 768px) {
   .blog {
     display: block;
-    width: 768px;
     margin: 0 auto;
     padding-bottom: 0;
   }
@@ -478,6 +491,15 @@ a:hover, a:focus {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1360px) {
+  .blog-details {
+    width: 680px;
+  }
+  .blog-box {
+    width: 1360px;
   }
 }
 
@@ -524,6 +546,12 @@ a:hover, a:focus {
   border: 1px solid #ffffff;
 }
 
+@media (min-width: 1360px) {
+  .blog-button {
+    margin-left: 30px;
+  }
+}
+
 .blog-button:hover, .blog-button:focus {
   color: #0284d0;
   background-color: #ffffff;
@@ -556,6 +584,12 @@ a:hover, a:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media (min-width: 1360px) {
+  .team-list-item {
+    width: 420px;
   }
 }
 
@@ -626,6 +660,12 @@ a:hover, a:focus {
   }
 }
 
+@media (min-width: 1360px) {
+  .request-box {
+    width: 680px;
+  }
+}
+
 .request-layout {
   display: block;
   width: 320px;
@@ -635,6 +675,12 @@ a:hover, a:focus {
 @media (min-width: 768px) {
   .request-layout {
     width: 768px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .request-layout {
+    width: 1360px;
   }
 }
 
@@ -654,6 +700,12 @@ a:hover, a:focus {
   height: 40px;
   background-color: #ffffff;
   border: none;
+}
+
+@media (min-width: 1360px) {
+  .request-input {
+    width: 620px;
+  }
 }
 
 .request-button {
@@ -677,6 +729,13 @@ a:hover, a:focus {
     padding-right: 230px;
     padding-left: 230px;
     font-size: 18px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .footer {
+    padding-right: 530px;
+    padding-left: 530px;
   }
 }
 
