@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://vink92.github.io/parcel-project-template/",
+  "homepage": "https://gal4enock.github.io/goweb_test",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build",
-    "deploy": "netlify deploy -p"
+    "predeploy": "npm run build -- --public-url=/parcel-project-template/",
+    "deploy": "gh-pages -d dist",
+    "netlify": "netlify"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "sass": "^1.26.9"
   },
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "netlify-cli": "^4.1.2"
   }
 }
