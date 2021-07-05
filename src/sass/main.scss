@@ -39,6 +39,7 @@ a {
   }
 }
 
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -208,6 +209,7 @@ a {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 13px;
+   
     @include for-size(tablet) {
       display: flex;
       padding-top: 40px;
@@ -357,27 +359,25 @@ a {
   background-color: $blue-bg;
   color: $white-text-color;
   padding-bottom: 30px;
+  width: 320px;
+  margin: 0 auto;
   @include for-size(tablet) {
+    width: 768px;
     display: block;
-    margin: 0 auto;
     padding-bottom: 0;
     &-details {
       width: 384px;
     }
     &-box {
         display: flex;
-        width: 768px;
-        // margin: 0 auto;
         justify-content: center;
         flex-direction: row-reverse;
       }
   }
   @include for-size(desktop) {
+    width: 1360px;
     &-details {
       width: 680px;
-    }
-    &-box {
-      width: 1360px;
     }
   }
   &-description {
@@ -442,6 +442,7 @@ a {
       justify-content: space-between;
     }
     &-item {
+      position: relative;
       @include for-size(desktop) {
       width: 420px;
     }
@@ -484,6 +485,12 @@ a {
       font-size: 18px;
       margin-bottom: 19px;
     }
+  }
+  &-foto {
+    opacity: 1;
+  display: block;
+  transition: .5s ease;
+  // backface-visibility: hidden;
   }
   &-foto:hover {
       transform: scale(1.15);
@@ -561,6 +568,7 @@ a {
     }
   &-social-links {
     display: flex;
+    // fill: $white-text-color;
     padding-left: 16px;
     padding-right: 16px;
     width: 256px;
@@ -568,5 +576,48 @@ a {
      @include for-size(tablet) {
     width: 287px;
     }
+  
   }
 }
+.filter {
+  width: 100%;
+  height: 186px;
+   @include for-size(tablet) {
+    height: 148px;
+    }
+    @include for-size(desktop) {
+    height: 280px;
+    }
+  background-color: gray;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+}
+
+.team-list-item:hover .member-foto {
+  opacity: 0.3;
+}
+
+.team-list-item:hover .filter {
+  opacity: 0.6;
+  transform: scale(1.15);
+  box-shadow: 20px 15px 15px rgb(59, 59, 59);
+}
+
+.team-social-link {
+  margin-top: 50%;
+  transform: translateY(-50%);
+  fill: $white-text-color;
+    &:hover,
+    &:focus {
+      fill-opacity: 0.8;
+    }
+  }
+
+  .social-link {
+    fill: $white-text-color; 
+      &:hover,
+      &:focus {
+        fill: #28a745;
+      }
+  }

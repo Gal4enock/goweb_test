@@ -485,12 +485,14 @@ a:hover, a:focus {
   background-color: #0284d0;
   color: #ffffff;
   padding-bottom: 30px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .blog {
+    width: 768px;
     display: block;
-    margin: 0 auto;
     padding-bottom: 0;
   }
   .blog-details {
@@ -500,7 +502,6 @@ a:hover, a:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 768px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -512,11 +513,11 @@ a:hover, a:focus {
 }
 
 @media (min-width: 1360px) {
+  .blog {
+    width: 1360px;
+  }
   .blog-details {
     width: 680px;
-  }
-  .blog-box {
-    width: 1360px;
   }
 }
 
@@ -605,6 +606,10 @@ a:hover, a:focus {
   }
 }
 
+.team-list-item {
+  position: relative;
+}
+
 @media (min-width: 1360px) {
   .team-list-item {
     width: 420px;
@@ -657,6 +662,13 @@ a:hover, a:focus {
     font-size: 18px;
     margin-bottom: 19px;
   }
+}
+
+.member-foto {
+  opacity: 1;
+  display: block;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .member-foto:hover {
@@ -780,5 +792,58 @@ a:hover, a:focus {
   .footer-social-links {
     width: 287px;
   }
+}
+
+.filter {
+  width: 100%;
+  height: 186px;
+  background-color: gray;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .filter {
+    height: 148px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .filter {
+    height: 280px;
+  }
+}
+
+.team-list-item:hover .member-foto {
+  opacity: 0.3;
+}
+
+.team-list-item:hover .filter {
+  opacity: 0.6;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-box-shadow: 20px 15px 15px #3b3b3b;
+          box-shadow: 20px 15px 15px #3b3b3b;
+}
+
+.team-social-link {
+  margin-top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #ffffff;
+}
+
+.team-social-link:hover, .team-social-link:focus {
+  fill-opacity: 0.8;
+}
+
+.social-link {
+  fill: #ffffff;
+}
+
+.social-link:hover, .social-link:focus {
+  fill: #28a745;
 }
 /*# sourceMappingURL=main.css.map */
