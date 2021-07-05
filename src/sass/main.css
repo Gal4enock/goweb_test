@@ -111,6 +111,11 @@ a:hover, a:focus {
   line-height: 1.2;
 }
 
+.header-logo:hover, .header-logo:focus {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
 @media (min-width: 768px) {
   .header-logo {
     font-size: 35px;
@@ -128,6 +133,7 @@ a:hover, a:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  text-decoration: underline;
 }
 
 .header-nav-list-li:not(:last-child) {
@@ -239,9 +245,7 @@ a:hover, a:focus {
 }
 
 .hero-button:hover, .hero-button:focus {
-  background-color: #ffffff;
-  color: #28a745;
-  fill: #28a745;
+  opacity: 0.5;
 }
 
 .about {
@@ -400,6 +404,13 @@ a:hover, a:focus {
 .button {
   border: 1px solid #ffffff;
   margin: 0;
+}
+
+.button:focus, .button:hover {
+  background-color: #ffffff;
+  color: #28a745;
+  fill: #28a745;
+  opacity: 1;
 }
 
 .cases {
@@ -561,6 +572,7 @@ a:hover, a:focus {
 .blog-button:hover, .blog-button:focus {
   color: #0284d0;
   background-color: #ffffff;
+  opacity: 1;
 }
 
 .team {
@@ -645,6 +657,13 @@ a:hover, a:focus {
     font-size: 18px;
     margin-bottom: 19px;
   }
+}
+
+.member-foto:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-box-shadow: 20px 15px 15px #3b3b3b;
+          box-shadow: 20px 15px 15px #3b3b3b;
 }
 
 .request {
