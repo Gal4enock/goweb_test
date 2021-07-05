@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url=/parcel-project-template/",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p"
   },
   "repository": {
     "type": "git",
