@@ -703,6 +703,10 @@ a:hover, a:focus {
   }
 }
 
+.request-box {
+  position: relative;
+}
+
 .request-layout {
   display: block;
   width: 320px;
@@ -742,6 +746,8 @@ a:hover, a:focus {
 @media (min-width: 1360px) {
   .request-input {
     width: 620px;
+    margin: 0;
+    margin-bottom: 36px;
   }
 }
 
@@ -855,5 +861,58 @@ a:hover, a:focus {
 .headerScrolled {
   opacity: 0.8;
   background-color: #585a5a;
+}
+
+.warning-icon {
+  color: red;
+}
+
+.warning-icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url("../images/svg/worning.svg");
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 35px;
+  bottom: 75px;
+  right: 20px;
+}
+
+@media (min-width: 768px) {
+  .warning-icon::after {
+    bottom: 114px;
+    right: 51px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .warning-icon::after {
+    bottom: 229px;
+    right: 51px;
+  }
+}
+
+.warning-icon::before {
+  content: 'This is a required field';
+  display: block;
+  position: absolute;
+  width: 235px;
+  bottom: 62px;
+  right: 51px;
+}
+
+@media (min-width: 768px) {
+  .warning-icon::before {
+    bottom: 110px;
+    right: 51px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .warning-icon::before {
+    bottom: 217px;
+    right: 190px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

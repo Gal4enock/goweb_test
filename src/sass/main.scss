@@ -512,6 +512,9 @@ a {
       width: 680px;
     }
     }
+    &-box {
+      position: relative;
+    }
   &-layout {
     display: block;
     width: 320px;
@@ -540,6 +543,8 @@ a {
     border: none;
      @include for-size(desktop) {
       width: 620px;
+      margin: 0;
+      margin-bottom: 36px;
     }
     
   }
@@ -628,4 +633,44 @@ a {
   .headerScrolled {
     opacity: 0.8;
     background-color: rgb(88, 90, 90);
+  }
+
+  .warning-icon {
+    color: red;
+  }
+  .warning-icon::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../images/svg/worning.svg');
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    bottom: 75px;
+    right:20px;
+      @include for-size(tablet) {
+      bottom: 114px;
+      right:51px;
+      }
+      @include for-size(desktop) {
+      bottom: 229px;
+      right:51px;
+      }
+  }
+
+  .warning-icon::before {
+    content: 'This is a required field';
+    display: block;
+    position: absolute;
+    width: 235px;
+    bottom: 62px;
+    right:51px;
+      @include for-size(tablet) {
+      bottom: 110px;
+      right:51px;
+      }
+       @include for-size(desktop) {
+      bottom: 217px;
+      right: 190px;
+      }
   }
