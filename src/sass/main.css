@@ -846,4 +846,13 @@ a:hover, a:focus {
 .social-link:hover, .social-link:focus {
   fill: #28a745;
 }
+
+.newHeader {
+  opacity: 1;
+  position: fixed;
+}
+
+.headerScrolled {
+  opacity: 0.8;
+}
 /*# sourceMappingURL=main.css.map */
