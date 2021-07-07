@@ -39,17 +39,6 @@ a {
   }
 }
 
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
 .container {
   width: 320px;
   margin: 0 auto;
@@ -572,6 +561,9 @@ a {
   }
   &-button {
     width: 260px;
+    @include for-size(desktop) {
+      margin-top: 60px;
+    }
   }
 }
 .footer {
@@ -694,5 +686,23 @@ a {
        @include for-size(desktop) {
       bottom: 217px;
       right: 190px;
+      }
+  }
+
+  .filter .footer-social-links {
+    width: 280px;
+    @include for-size(tablet) {
+      width: 200px;
+      }
+       @include for-size(desktop) {
+        width: 400px;
+      }
+      & .team-social-link {
+        fill: $white-text-color;
+          &:hover,
+          &:focus {
+            fill: red;
+            fill-opacity: 0.8;
+          }
       }
   }

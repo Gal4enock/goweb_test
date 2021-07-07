@@ -41,18 +41,6 @@ a:hover, a:focus {
   color: #e9e9e9;
 }
 
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
-
 .container {
   width: 320px;
   margin: 0 auto;
@@ -788,6 +776,12 @@ a:hover, a:focus {
   width: 260px;
 }
 
+@media (min-width: 1360px) {
+  .request-button {
+    margin-top: 60px;
+  }
+}
+
 .footer {
   color: #ffffff;
   font-size: 16px;
@@ -947,5 +941,30 @@ a:hover, a:focus {
     bottom: 217px;
     right: 190px;
   }
+}
+
+.filter .footer-social-links {
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .filter .footer-social-links {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .filter .footer-social-links {
+    width: 400px;
+  }
+}
+
+.filter .footer-social-links .team-social-link {
+  fill: #ffffff;
+}
+
+.filter .footer-social-links .team-social-link:hover, .filter .footer-social-links .team-social-link:focus {
+  fill: red;
+  fill-opacity: 0.8;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 const refs = {
   header: document.querySelector(".header"),
-  button: document.querySelector(".request-button"),
+  form: document.querySelector(".request-box"),
   input: document.querySelector(".required")
 
 }
@@ -35,8 +35,10 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
     });
 });
 
-refs.button.addEventListener("click", () => {
+refs.form.addEventListener("submit", (e) => {
+  e.preventDefault();
   if (refs.input.value.length < 5) {
     refs.input.insertAdjacentHTML("afterend", '<div class="warning-icon"><div/>')
   }
+  refs.input.value = '';
 })
