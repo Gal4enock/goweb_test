@@ -110,38 +110,42 @@ a {
       }
   }
 }
+
+.bcg {
+    width: 100%;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/mobile-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+      screen and (min-resolution: 96dpi) and (min-width: 320px),
+      screen and (min-resolution: 1dppx) and (min-width: 320px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/mobile-hero2x.jpg');
+    }
+
+    @include for-size(tablet) {
+      height: 1024px;
+      padding-top: 407px;
+      background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/tablet-hero.jpg');
+      @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        screen and (min-resolution: 96dpi) and (min-width: 768px),
+        screen and (min-resolution: 1dppx) and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/tablet-hero2x.jpg');
+      }
+    }
+    @include for-size(desktop) {
+      height: 768px;
+      padding-top: 279px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/desktop-hero.jpg');
+      @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        screen and (min-resolution: 96dpi) and (min-width: 768px),
+        screen and (min-resolution: 1dppx) and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/desktop-hero2x.jpg');
+      }
+    }
+}
 .hero {
   padding-top: 144px;
   padding-bottom: 95px;
-  background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/mobile-hero.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
-    screen and (min-resolution: 96dpi) and (min-width: 320px),
-    screen and (min-resolution: 1dppx) and (min-width: 320px) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/mobile-hero2x.jpg');
-  }
-
-  @include for-size(tablet) {
-    height: 1024px;
-    padding-top: 407px;
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/tablet-hero.jpg');
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-      screen and (min-resolution: 96dpi) and (min-width: 768px),
-      screen and (min-resolution: 1dppx) and (min-width: 768px) {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/tablet-hero2x.jpg');
-    }
-  }
-  @include for-size(desktop) {
-    height: 768px;
-    padding-top: 279px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/desktop-hero.jpg');
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-      screen and (min-resolution: 96dpi) and (min-width: 768px),
-      screen and (min-resolution: 1dppx) and (min-width: 768px) {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/optimise-images/desktop-hero2x.jpg');
-    }
-  }
   &-title {
     display: block;
     margin: 0 auto;
@@ -195,26 +199,39 @@ a {
 .about {
   color: $black-text-color;
   font-weight: 400;
-  @include for-size(tablet) {
-    width: 768px;
-    margin: 0 auto;
-    &-details {
-      display: flex;
-       }
+  margin: 0 auto;
+  &-bcg {
+      background-color: $green-bg;
+      width: 100%;
   }
+  &-details {
+    margin: 0 auto;
+    width: 320px;
+  @include for-size(tablet) {
+      display: flex;
+      width: 768px;
+      justify-content: center;
+       }
+  
     @include for-size(desktop) {
       width: 1360px;
   }
+}
   &-list {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 13px;
-   
+    width: 320px;
+    margin: 0 auto;
     @include for-size(tablet) {
+      width: 768px;
       display: flex;
       padding-top: 40px;
       padding-bottom: 29px;
       justify-content: space-between;
+      }
+      @include for-size(desktop) {
+      width: 1360px;
       }
       &-item {
         @include for-size(tablet) {
@@ -257,7 +274,6 @@ a {
       }
   }
   &-description {
-    background-color: $green-bg;
     color: $white-text-color;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -359,23 +375,29 @@ a {
   background-color: $blue-bg;
   color: $white-text-color;
   padding-bottom: 30px;
-  width: 320px;
   margin: 0 auto;
+  width: 100%;
   @include for-size(tablet) {
-    width: 768px;
     display: block;
     padding-bottom: 0;
     &-details {
       width: 384px;
     }
     &-box {
+      margin: 0 auto;
+      width: 320px;
         display: flex;
         justify-content: center;
         flex-direction: row-reverse;
+        @include for-size(tablet) {
+          width: 768px;
+        }
+        @include for-size(desktop) {
+          width: 1360px;
+        }
       }
   }
   @include for-size(desktop) {
-    width: 1360px;
     &-details {
       width: 680px;
     }
